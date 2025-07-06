@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akhileswari Pemmanaboina</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lottie-web@latest/build/player/lottie.min.js"></script>
+</head>
+<body class="text-white bg-gray-900">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full bg-black bg-opacity-70 z-50 p-4">
+    <div class="flex items-center justify-between max-w-7xl mx-auto">
+      <div class="text-xl font-bold text-white">Akhila's Portfolio</div>
+      <button id="menu-button" class="md:hidden text-white focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <ul class="hidden md:flex space-x-6 text-white">
+        <li><a href="#about" class="hover:text-teal-400">About</a></li>
+        <li><a href="#projects" class="hover:text-teal-400">Projects</a></li>
+        <li><a href="#experience" class="hover:text-teal-400">Experience</a></li>
+        <li><a href="#skills" class="hover:text-teal-400">Skills</a></li>
+        <li><a href="#hobbies" class="hover:text-teal-400">Hobbies</a></li>
+        <li><a href="#contact" class="hover:text-teal-400">Contact</a></li>
+      </ul>
+    </div>
+    <ul id="mobile-menu" class="mt-4 space-y-4 text-white md:hidden hidden text-center">
+      <li><a href="#about" class="block hover:text-teal-400">About</a></li>
+      <li><a href="#projects" class="block hover:text-teal-400">Projects</a></li>
+      <li><a href="#experience" class="block hover:text-teal-400">Experience</a></li>
+      <li><a href="#skills" class="block hover:text-teal-400">Skills</a></li>
+      <li><a href="#hobbies" class="block hover:text-teal-400">Hobbies</a></li>
+      <li><a href="#contact" class="block hover:text-teal-400">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative h-screen flex justify-center items-center text-center px-6"style="background: url('assets/lines.gif') center center / cover no-repeat;>
+    <div id="lottie-bg" class="absolute inset-0 z-0 pointer-events-none"></div>
+    <div class="relative z-10">
+      <h1 class="text-5xl md:text-6xl font-extrabold mb-4 fade-in-loop">Akhileswari Pemmanaboina</h1>
+      <p class="text-lg md:text-xl font-medium mb-6">Data Engineer | Full Stack Developer | ML & LLM Enthusiast</p>
+      <a href="#about" class="bg-teal-500 px-6 py-3 rounded hover:bg-teal-600 transition">Explore</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 px-6 bg-gray-900">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-6">About Me</h2>
+      <p class="text-gray-300 text-lg leading-relaxed max-w-3xl mx-auto">
+         I recently completed my Master's in Computer Science at Texas Tech University. With a strong foundation in software engineering and data systems,I’ve built scalable data pipelines with AWS and PySpark, developed web apps, and engineered NLP-driven applications. <br><br>
+      I’m particularly passionate about Artificial Intelligence and Large Language Models (LLMs). My recent work includes building Retrieval-Augmented Generation (RAG) systems, prompt-engineered solutions, and LLM-integrated applications using LangChain, MongoDB Atlas Vector Search, and HuggingFace Transformers. <br><br>
+      I thrive at the intersection of automation, analytics, and intelligent systems, and I’m driven by the impact that modern AI can have on solving real-world problems.
+    </p>
+
+      </p>
+    </div>
+  </section>
+ <!-- Projects -->
+  <section id="projects" class="py-20 px-6 bg-gray-800">
+  <h2 class="text-3xl font-bold mb-10 text-center">Projects</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <a href="https://github.com/akhila4410/rag-investment-evaluator" target="_blank" class="bg-gray-700 rounded-lg overflow-hidden shadow-lg hover:scale-105 transition duration-300">
+      <img src="assets/rag.png" alt="RAG Investment Evaluator" class="w-full max-h-64 object-contain mx-auto bg-white">
+      <div class="p-4">
+        <h3 class="text-xl font-semibold text-white">RAG Investment Evaluator</h3>
+        <p class="text-sm text-gray-300 mt-2">Evaluates startup memos using GPT, LangChain, and MongoDB Atlas Vector Search. Includes PDF output and guideline-aware chatbot.</p>
+      </div>
+    </a>
+
+    <a href="https://github.com/akhila4410/university_course_management" target="_blank" class="bg-gray-700 rounded-lg overflow-hidden shadow-lg hover:scale-105 transition duration-300">
+      <img src="assets/course-mgmt.png" alt="University Course Management" class="w-full max-h-64 object-contain mx-auto bg-white">
+      <div class="p-4">
+        <h3 class="text-xl font-semibold text-white">University Course Management</h3>
+        <p class="text-sm text-gray-300 mt-2">Secure role-based app for course, fee, and enrollment management built with FastAPI and MongoDB.</p>
+      </div>
+    </a>
+
+
+
+    <a href="https://github.com/akhila4410/Automated-Attendance-System" target="_blank" class="bg-gray-700 rounded-lg overflow-hidden shadow-lg hover:scale-105 transition duration-300">
+      <img src="assets/face-attendance.png" alt="Face Recognition Attendance" class="w-full max-h-64 object-contain mx-auto bg-white">
+      <div class="p-4">
+        <h3 class="text-xl font-semibold text-white">Face Recognition Attendance System</h3>
+        <p class="text-sm text-gray-300 mt-2">ML-based attendance tracking with 98% accuracy using OpenCV, TensorFlow, and camera feed.</p>
+      </div>
+    </a>
+
+     <a href="https://github.com/akhila4410/Predicting-Penny-Stocks" target="_blank" class="bg-gray-700 rounded-lg overflow-hidden shadow-lg hover:scale-105 transition duration-300">
+      <img src="assets/penny.png" alt="Predicting Penny Stocks" class="w-full max-h-64 object-contain mx-auto bg-white">
+      <div class="p-4">
+        <h3 class="text-xl font-semibold text-white">Penny Stock Predictor</h3>
+        <p class="text-sm text-gray-300 mt-2">Designed a pipeline using YFinance and trained a Linear Regression model to forecast penny stock trends. Built using Pandas, NumPy, and Scikit-learn in Google Colab.”</p>
+      </div>
+    </a>
+
+    <a href="https://github.com/akhila4410/stock-sentiment-dashboard" target="_blank" class="bg-gray-700 rounded-lg overflow-hidden shadow-lg hover:scale-105 transition duration-300">
+      <img src="assets/stock-dashboard.png" alt="Stock Sentiment Analysis" class="w-full max-h-64 object-contain mx-auto bg-white">
+      <div class="p-4">
+        <h3 class="text-xl font-semibold text-white">Stock Application & Sentiment Analysis</h3>
+        <p class="text-sm text-gray-300 mt-2">Live stock data and news sentiment classification using FastAPI, React.js, and ML models.</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+
+  <!-- Experience -->
+  <section id="experience" class="py-20 px-6 bg-gray-900 text-white">
+    <h2 class="text-3xl font-bold mb-10 text-center">Work Experience</h2>
+    <div class="max-w-4xl mx-auto border-l-4 border-teal-500 pl-6 space-y-10">
+      <div>
+        <h3 class="text-xl font-semibold">AWS Data Engineer – Calsoft Private Ltd</h3>
+        <p class="text-sm text-teal-300 italic mb-2">Jun 2024 – Jan 2025</p>
+        <ul class="list-disc list-inside text-gray-300">
+
+            <li>Built scalable ETL pipelines using AWS Glue, PySpark, Redshift, and Iceberg to process large-scale enterprise datasets across multiple business domains.</li>
+            <li>Designed a comprehensive data pipeline framework for diverse sources like SFTP, MySQL, MSSQL, and Redshift, with orchestration on AWS EMR and Iceberg.</li>
+            <li>Automated batch and streaming workflows using Apache Airflow DAGs, improving reliability and reducing manual intervention.</li>
+            <li>Developed and integrated CI/CD pipelines using GitHub Actions to deploy data pipelines, APIs, and DAGs with automated testing, code linting, and rollback support.</li>
+            <li>Engineered and deployed high-performance FastAPI and GraphQL endpoints through AWS Lambda and API Gateway, secured with IAM-based policies.</li>
+            <li>Implemented a reusable data quality validation framework using PyDeequ and Pytest, supporting parameterized rules (e.g., thresholds, severity levels), reducing QA effort by 80%.</li>
+            <li>Monitored performance using Tableau and AWS QuickSight dashboards for system health, SLA tracking, and pipeline insights.</li>
+            <li>Standardized the entire lifecycle from data ingestion to delivery, ensuring compliance with company-wide data engineering practices.</li>
+            <li><strong>Technologies:</strong> AWS (Glue, EMR, Redshift, S3, Lambda, API Gateway, Cloud9), Apache Spark, Apache Airflow, PySpark, Python, SQL, Iceberg, FastAPI, GraphQL, GitHub Actions (CI/CD), PyDeequ, Tableau, AWS QuickSight, Hadoop</li>
+
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold">Full Stack Developer – Our Broking India</h3>
+        <p class="text-sm text-teal-300 italic mb-2">Jan 2023 – Apr 2023</p>
+        <ul class="list-disc list-inside text-gray-300">
+         <li>Designed and developed visually appealing, responsive web interfaces using HTML, CSS, and Bootstrap, ensuring a seamless user experience.</li>
+          <li>Extended expertise to back-end development by designing and implementing server-side logic, including the development of RESTful APIs.</li>
+          <li>Spearheaded a project to extract and analyze real-time announcements from the National Stock Exchange (NSE), utilizing algorithms to evaluate their impact on stock performance.</li>
+          <li>Gained hands-on experience as a Backend Engineer, implementing and optimizing back-end services using Python.</li>
+          <li>Developed FastAPI endpoints for efficient data handling and business logic integration, enhancing application functionality and scalability.</li>
+          <li><strong>Technologies:</strong> HTML, CSS, Bootstrap, Python, FastAPI, RESTful APIs</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold">Software Engineer – WallStBulls</h3>
+        <p class="text-sm text-teal-300 italic mb-2">Dec 2021 – Dec 2022</p>
+        <ul class="list-disc list-inside text-gray-300">
+
+            <li><strong>Backend Development:</strong> Designed and developed backend services for a mobile application providing stock and cryptocurrency recommendations, ensuring scalability and reliability.</li>
+            <li><strong>Data Infrastructure:</strong> Built infrastructure for ingesting, processing, and storing financial data using Python, MongoDB, and Firebase, supporting live streaming and real-time updates.</li>
+            <li><strong>Machine Learning Integration:</strong> Developed and implemented basic ML algorithms for stock forecasting and predictions, improving the app’s decision-making capabilities.</li>
+            <li><strong>Cloud and Containerization:</strong> Worked with Google Cloud Platform (GCP) for deployment and Docker for containerization, streamlining development and deployment workflows.</li>
+            <li><strong>Web Scraping:</strong> Utilized tools like Beautiful Soup and Selenium for real-time data scraping from financial sources, ensuring data accuracy and availability.</li>
+            <li><strong>Collaboration and Learning:</strong> Collaborated with senior engineers and cross-functional teams, gaining expertise in backend architecture, server management, and log handling.</li>
+            <li><strong>API Development:</strong> Developed robust FastAPI endpoints to manage data flow between frontend and backend services, ensuring high performance and ease of integration.</li>
+            <li><strong>Key Technologies:</strong> Python, FastAPI, GCP, MongoDB, Firebase, Docker, Beautiful Soup, Selenium</li>
+
+
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-20 px-6 bg-gray-900 text-white">
+  <h2 class="text-3xl font-bold mb-10 text-center">Skills</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+    <div class="bg-gray-800 p-6 rounded-lg shadow">
+      <h3 class="text-xl font-semibold mb-2">Languages</h3>
+      <ul class="list-disc list-inside text-gray-300">
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>PHP</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>C++</li>
+        <li>Java</li>
+        <li>SQL</li>
+      </ul>
+    </div>
+
+    <div class="bg-gray-800 p-6 rounded-lg shadow">
+      <h3 class="text-xl font-semibold mb-2">Frameworks & Tools</h3>
+      <ul class="list-disc list-inside text-gray-300">
+        <li>FastAPI</li>
+        <li>Flask</li>
+        <li>Django</li>
+        <li>Bootstrap</li>
+        <li>Postman</li>
+        <li>Docker</li>
+        <li>PyTorch</li>
+        <li>Elasticsearch</li>
+      </ul>
+    </div>
+
+    <div class="bg-gray-800 p-6 rounded-lg shadow">
+      <h3 class="text-xl font-semibold mb-2">Big Data & ETL</h3>
+      <ul class="list-disc list-inside text-gray-300">
+        <li>Apache Spark</li>
+        <li>Apache Iceberg</li>
+        <li>Hadoop</li>
+        <li>ETL Pipelines</li>
+        <li>Data Lake</li>
+        <li>Data Lakehouse</li>
+        <li>Data Warehousing</li>
+        <li>Data Modeling</li>
+      </ul>
+    </div>
+
+    <div class="bg-gray-800 p-6 rounded-lg shadow">
+      <h3 class="text-xl font-semibold mb-2">Databases</h3>
+      <ul class="list-disc list-inside text-gray-300">
+        <li>MySQL</li>
+        <li>MongoDB</li>
+        <li>ChromaDB</li>
+      </ul>
+    </div>
+
+    <div class="bg-gray-800 p-6 rounded-lg shadow">
+      <h3 class="text-xl font-semibold mb-2">Cloud & DevOps</h3>
+      <ul class="list-disc list-inside text-gray-300">
+        <li>AWS</li>
+        <li>AWS Glue</li>
+        <li>AWS Redshift</li>
+        <li>AWS SageMaker</li>
+        <li>GitHub</li>
+        <li>GitLab</li>
+      </ul>
+    </div>
+
+    <div class="bg-gray-800 p-6 rounded-lg shadow">
+      <h3 class="text-xl font-semibold mb-2">Visualization & Reporting</h3>
+      <ul class="list-disc list-inside text-gray-300">
+        <li>Tableau</li>
+        <li>Power BI</li>
+        <li>AWS QuickSight</li>
+      </ul>
+    </div>
+
+    <div class="bg-gray-800 p-6 rounded-lg shadow">
+      <h3 class="text-xl font-semibold mb-2">Machine Learning</h3>
+      <ul class="list-disc list-inside text-gray-300">
+        <li>Regression Analysis</li>
+        <li>Bayesian Method</li>
+        <li>Decision Tree</li>
+        <li>Random Forest</li>
+        <li>Support Vector Machine</li>
+        <li>Neural Network</li>
+        <li>Sentiment Analysis</li>
+        <li>K-Means Clustering</li>
+        <li>KNN</li>
+        <li>Ensemble Method</li>
+        <li>Natural Language Processing (NLP)</li>
+        <li>SciPy</li>
+        <li>Scikit-learn</li>
+      </ul>
+    </div>
+
+    <div class="bg-gray-800 p-6 rounded-lg shadow">
+      <h3 class="text-xl font-semibold mb-2">AI/LLM & Prompt Engineering</h3>
+      <ul class="list-disc list-inside text-gray-300">
+        <li>Prompt Engineering</li>
+        <li>Retrieval-Augmented Generation (RAG)</li>
+        <li>MongoDB Atlas Vector Search</li>
+        <li>LangChain</li>
+        <li>HuggingFace Transformers</li>
+        <li>PDF/JSON/Email-based Extraction</li>
+      </ul>
+    </div>
+
+    <div class="bg-gray-800 p-6 rounded-lg shadow">
+      <h3 class="text-xl font-semibold mb-2">Testing</h3>
+      <ul class="list-disc list-inside text-gray-300">
+        <li>Pytest</li>
+        <li>Unit Testing</li>
+        <li>Selenium</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Certifications -->
+<section id="certifications" class="py-20 px-6 bg-gray-800 text-white">
+  <h2 class="text-3xl font-bold mb-10 text-center">Certifications & Licenses</h2>
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+<!--    <div class="bg-gray-700 p-6 rounded-lg shadow">-->
+<!--      <h3 class="text-xl font-semibold text-teal-400">AWS Certified Cloud Practitioner</h3>-->
+<!--      <p class="text-gray-300 text-sm mt-2">Issued by Amazon Web Services — <a href="https://www.your-verification-link.com" target="_blank" class="text-teal-300 underline">View Certificate</a></p>-->
+<!--    </div>-->
+<!--    <div class="bg-gray-700 p-6 rounded-lg shadow">-->
+<!--      <h3 class="text-xl font-semibold text-teal-400">Machine Learning Specialization</h3>-->
+<!--      <p class="text-gray-300 text-sm mt-2">Coursera – Andrew Ng, Stanford University — <a href="https://www.your-verification-link.com" target="_blank" class="text-teal-300 underline">View Certificate</a></p>-->
+<!--    </div>-->
+<!--    <div class="bg-gray-700 p-6 rounded-lg shadow">-->
+<!--      <h3 class="text-xl font-semibold text-teal-400">Prompt Engineering for Developers</h3>-->
+<!--      <p class="text-gray-300 text-sm mt-2">DeepLearning.AI & OpenAI — <a href="https://www.your-verification-link.com" target="_blank" class="text-teal-300 underline">View Certificate</a></p>-->
+<!--    </div>-->
+    <!-- New Certifications -->
+    <div class="bg-gray-700 p-6 rounded-lg shadow">
+      <h3 class="text-xl font-semibold text-teal-400">Building RAG Apps Using MongoDB (Atlas Vector Search)</h3>
+      <p class="text-gray-300 text-sm mt-2">MongoDB University — <a href="https://www.credly.com/badges/aff77e8f-49c6-40c9-bbfc-723527f08e2e" class="text-teal-300 underline">View Certificate </a></p>
+    </div>
+
+
+    <div class="bg-gray-700 p-6 rounded-lg shadow">
+      <h3 class="text-xl font-semibold text-teal-400">Generative AI in Practice</h3>
+      <p class="text-gray-300 text-sm mt-2">SoloLearn — <a href="assets/Gen AI.pdf" target="_blank" class="text-teal-300 underline">View Certificate</a></p>
+    </div>
+    <div class="bg-gray-700 p-6 rounded-lg shadow">
+      <h3 class="text-xl font-semibold text-teal-400">Introduction to LLMs</h3>
+      <p class="text-gray-300 text-sm mt-2">SoloLearn — <a href="assets/llm.pdf" target="_blank" class="text-teal-300 underline">View Certificate</a></p>
+    </div>
+
+    <div class="bg-gray-700 p-6 rounded-lg shadow">
+      <h3 class="text-xl font-semibold text-teal-400"> Python for Everybody</h3>
+      <p class="text-gray-300 text-sm mt-2">Coursera — <a href="assets/Python.pdf" target="_blank" class="text-teal-300 underline">View Certificate</a></p>
+    </div>
+    <div class="bg-gray-700 p-6 rounded-lg shadow">
+      <h3 class="text-xl font-semibold text-teal-400"> Python Data Structures</h3>
+      <p class="text-gray-300 text-sm mt-2">Coursera — <a href="assets/Python DS.pdf" target="_blank" class="text-teal-300 underline">View Certificate</a></p>
+    </div>
+    <div class="bg-gray-700 p-6 rounded-lg shadow">
+      <h3 class="text-xl font-semibold text-teal-400"> Algorithmic Toolbox</h3>
+      <p class="text-gray-300 text-sm mt-2">Coursera — <a href="assets/algorithmic toolbox.pdf" target="_blank" class="text-teal-300 underline">View Certificate</a></p>
+    </div>
+     <div class="bg-gray-700 p-6 rounded-lg shadow">
+      <h3 class="text-xl font-semibold text-teal-400">SQL</h3>
+      <p class="text-gray-300 text-sm mt-2">HackerRank — <a href="https://www.hackerrank.com/certificates/iframe/5ce2ccb36193" class="text-teal-300 underline">View Certificate </a></p>
+    </div>
+    <div class="bg-gray-700 p-6 rounded-lg shadow">
+      <h3 class="text-xl font-semibold text-teal-400">Python</h3>
+      <p class="text-gray-300 text-sm mt-2">HackerRank — <a href="https://www.hackerrank.com/certificates/iframe/7debe52f8618" class="text-teal-300 underline">View Certificate </a></p>
+    </div>
+    <div class="bg-gray-700 p-6 rounded-lg shadow">
+      <h3 class="text-xl font-semibold text-teal-400">Problem Solving</h3>
+      <p class="text-gray-300 text-sm mt-2">HackerRank — <a href="https://www.hackerrank.com/certificates/iframe/ec023c857079" class="text-teal-300 underline">View Certificate </a></p>
+    </div>
+
+    <div class="bg-gray-700 p-6 rounded-lg shadow">
+      <h3 class="text-xl font-semibold text-teal-400">Docker</h3>
+      <p class="text-gray-300 text-sm mt-2">Udemy — <a href="assets/Docker.pdf" target="_blank" class="text-teal-300 underline">View Certificate</a></p>
+    </div>
+    <div class="bg-gray-700 p-6 rounded-lg shadow">
+      <h3 class="text-xl font-semibold text-teal-400"> Machine Learning with Python</h3>
+      <p class="text-gray-300 text-sm mt-2">Verzeo — <a href="assets/ML.jpg" target="_blank" class="text-teal-300 underline">View Certificate</a></p>
+    </div>
+    <div class="bg-gray-700 p-6 rounded-lg shadow">
+      <h3 class="text-xl font-semibold text-teal-400">Linux</h3>
+      <p class="text-gray-300 text-sm mt-2">Coursera — <a href="assets/Linux.pdf" target="_blank" class="text-teal-300 underline">View Certificate</a></p>
+    </div>
+
+  </div>
+</section>
+
+<section id="hobbies" class="py-20 px-6 bg-gray-800 text-white">
+  <h2 class="text-3xl font-bold mb-10 text-center">Hobbies & Interests</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+    <!-- Pencil Sketching -->
+    <div class="relative bg-gray-700 p-6 rounded-lg text-center overflow-hidden">
+      <div class="absolute inset-0 bg-center bg-cover opacity-30" style="background-image: url('assets/5.jpeg');"></div>
+      <div class="relative z-10">
+        <h3 class="text-xl font-semibold">✏️ Pencil Sketching</h3>
+        <p class="text-gray-300 mb-4">I enjoy creating pencil sketches during my free time.</p>
+      </div>
+    </div>
+
+    <!-- AI Agents -->
+    <div class="relative bg-gray-700 p-6 rounded-lg text-center overflow-hidden">
+      <div class="absolute inset-0 bg-center bg-cover opacity-30" style="background-image: url('assets/Ai.png');"></div>
+      <div class="relative z-10">
+        <h3 class="text-xl font-semibold">🤖 Exploring LLMs & AI Agents</h3>
+        <p class="text-gray-300">I enjoy learning new technologies, with a current focus on Large Language Models (LLMs) and AI agents. I'm actively exploring how tools like OpenAI, LangChain, and MongoDB can power intelligent applications.</p>
+      </div>
+    </div>
+
+    <!-- Music -->
+    <div class="relative bg-gray-700 p-6 rounded-lg text-center overflow-hidden">
+      <div class="absolute inset-0 bg-center bg-cover opacity-30" style="background-image: url('assets/music.png');"></div>
+      <div class="relative z-10">
+        <h3 class="text-xl font-semibold">🎧 Listening to Music</h3>
+        <p class="text-gray-300">I simply enjoy listening to songs during breaks or while working.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+  <!-- Contact -->
+<section id="contact" class="py-20 px-6 bg-gradient-to-b from-gray-800 to-gray-900 text-white">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-6">Let’s Connect</h2>
+    <p class="text-lg mb-8 text-gray-300">Have a project idea, want to collaborate, or just say hi? Feel free to reach out!</p>
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+      <a href="mailto:apemmanaboina@gmail.com" class="bg-teal-500 hover:bg-teal-600 text-white px-6 py-3 rounded-full transition">📧 Email Me</a>
+      <a href="assets/Akhileswari_Pemmanaboina.pdf" download class="bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-full transition">📄 Download Resume</a>
+    </div>
+    <div class="flex justify-center gap-6 mt-8 text-3xl">
+      <a href="https://github.com/akhila4410" target="_blank" class="hover:text-teal-400" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/akhileswari-pemmanaboina-16a7921b4" target="_blank" class="hover:text-teal-400" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+  <footer class="bg-black text-center py-6">
+    <p>© 2025 Akhileswari Pemmanaboina. All rights reserved.</p>
+  </footer>
+
+  <script>
+    lottie.loadAnimation({
+      container: document.getElementById('lottie-bg'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'animation.json'
+    });
+    document.getElementById('menu-button').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
